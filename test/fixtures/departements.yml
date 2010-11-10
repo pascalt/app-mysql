@@ -1,0 +1,15 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  region_id: 
+  nom: 
+  code: 
+  nc: 
+  code_region: MyString
+
+two:
+  region_id: 
+  nom: 
+  code: 
+  nc: 
+  code_region: MyString

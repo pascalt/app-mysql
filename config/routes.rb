@@ -1,4 +1,8 @@
 AppMysql::Application.routes.draw do
+  resources :departements
+
+  resources :regions
+
   resources :articles
 
   # The priority is based upon order of creation:
