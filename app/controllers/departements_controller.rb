@@ -2,7 +2,9 @@ class DepartementsController < ApplicationController
   # GET /departements
   # GET /departements.xml
   def index
-    @departements = Departement.all
+    @region = Region.find_by_id(params[:region_id])
+    @departements = @region ? @region.departements : Departement.all
+    #@departements = Departement.all
 
     respond_to do |format|
       format.html # index.html.erb

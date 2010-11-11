@@ -1,7 +1,9 @@
 AppMysql::Application.routes.draw do
   resources :departements
 
-  resources :regions
+  resources :regions do
+    resources :departements    
+  end
 
   resources :articles
 
